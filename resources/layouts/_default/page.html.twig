@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ site.title }}</title>
+    <link rel="stylesheet" href="{{ url('css/style.css') }}">
+</head>
+<body>
+    <header>
+        <div class="logo">ALPHA<span>.</span></div>
+        <nav>
+            <a href="/">Accueil</a>
+            <a href="#about">À propos</a>
+            <a href="#skills">Compétences</a>
+            <a href="#projects">Projets</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            {{ page.content }}
+        </section>
+    </main>
+
+    <footer>
+        <p>© {{ "now"|date("Y") }} Alpha Kitara — Portfolio personnel</p>
+    </footer>
+</body>
+</html>

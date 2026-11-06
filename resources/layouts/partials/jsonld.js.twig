@@ -1,0 +1,77 @@
+{% if page.metatags.jsonld|default(site.metatags.jsonld|default(false)) %}
+    <script type="application/ld+json">{% apply minify_js %}
+      [
+        {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "name": "{{ site.title }}",
+          "description": "{{ site.description }}",
+          "url": "{{ url('/', {canonical:true}) }}",
+          {%- if site.image is defined ~%}
+          "image": ["{{ url(site.image,{canonical:true}) }}"]
+          {%- endif ~%}
+          {%- if site.social is defined ~%},
+          "sameAs": [
+            {%- for social in site.social ~%}
+              {%- if social.url is defined ~%}
+            "{{ social.url }}"{% if not loop.last %},{% endif %}
+              {%- endif ~%}
+            {%- endfor ~%}
+          ]
+          {%- endif ~%}
+        }
+        {%- if page.section is not empty -%}
+        ,{
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [{
+            "@type": "ListItem",
+            "position": 1,
+            "name": "{{ page.section|capitalize }}",
+            "item": "{{ url(page.section,{canonical:true}) }}"
+          },{
+            "@type": "ListItem",
+            "position": 2,
+            "name": "{{ page.title|e }}",
+            "item": "{{ url(page,{canonical:true}) }}"
+          }]
+        }
+        {%- if page.section == site.metatags.articles|default('blog') -%}
+        ,{
+          "@context": "https://schema.org",
+          "@type": "NewsArticle",
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "{{ url(page,{canonical:true}) }}"
+          },
+          "headline": "{{ page.title|e }}",
+          {%- if page.image is defined ~%}
+          "image": [
+            "{{ url(page.image,{canonical:true}) }}"
+          ],
+          {%- endif ~%}
+          "datePublished": "{{ page.date|date('Y-m-dTH:i:sP') }}",
+          "dateModified": "{{ page.date|date('Y-m-dTH:i:sP') }}",
+          "author": {
+            "@type": "Person",
+            "name": "{{ author.name }}"
+            {%- if author.url|default('') is not empty ~%},
+            "url": "{{ author.url }}"
+            {%- endif ~%}
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "{{ site.title }}"
+            {%- if favicon_url is not empty ~%},
+            "logo": {
+              "@type": "ImageObject",
+              "url": "{{ favicon_url }}"
+            }
+            {%- endif ~%}
+          }
+        }
+        {%- endif ~%}
+        {%- endif ~%}
+      ]
+    {% endapply %}</script>
+{%- endif %}

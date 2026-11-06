@@ -1,0 +1,16 @@
+{% set pages = site.pages.showable -%}
+
+{% if page.pages is defined %}
+  {%- set pages = page.pages.showable -%}
+{% endif -%}
+
+{% set first = pages|first %}
+{% set title = site.title ~ ' - ' ~ page.title %}
+{% set date = first.date|default(site.time) %}
+{% set lang = site.language|default('en') -%}
+
+{% if page.type == 'homepage' %}
+  {%- set title = site.title -%}
+{% endif -%}
+
+{% block feed %}{% endblock %}

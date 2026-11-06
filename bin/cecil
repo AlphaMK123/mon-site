@@ -1,0 +1,83 @@
+#!/usr/bin/env php
+<?php
+/**
+ * This file is part of the Cecil/Cecil package.
+ *
+ * Copyright (c) Arnaud Ligny <arnaud@ligny.fr>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
+ */
+
+error_reporting(E_ERROR);
+if (getenv('CECIL_DEBUG') == 'true') {
+    error_reporting(E_ALL ^ E_NOTICE);
+}
+date_default_timezone_set('UTC');
+
+$name       = 'Cecil';
+$version    = '@git_version@';
+$phpVersion = '7.1.0';
+
+// checks PHP minimal version
+if (version_compare(PHP_VERSION, $phpVersion, '<')) {
+    printf('PHP %s is required (server version: %s)%s', $phpVersion, PHP_VERSION, PHP_EOL);
+
+    exit(2);
+}
+
+// autoload
+switch (true) {
+    // Installed standalone
+    case (file_exists(__DIR__.'/../vendor/autoload.php')):
+        require __DIR__.'/../vendor/autoload.php';
+        break;
+    // Installed as a Composer dependency
+    case (file_exists(__DIR__.'/../../../autoload.php')):
+        require __DIR__.'/../../../autoload.php';
+        break;
+    // Installed as a Composer dependency, relative to CWD
+    case (file_exists('vendor/autoload.php')):
+        require 'vendor/autoload.php';
+        break;
+    default:
+        echo 'Unable to locate Composer autoloader. Please run "composer install".'.PHP_EOL;
+        exit(2);
+}
+
+use Cecil\Application;
+use Cecil\Builder;
+
+if (function_exists('ini_set')) {
+    @ini_set('display_errors', 1);
+
+    $memoryInBytes = function ($value) {
+        $unit = strtolower(substr($value, -1, 1));
+        $value = (int) $value;
+        switch($unit) {
+            case 'g':
+                $value *= 1024;
+            case 'm':
+                $value *= 1024;
+            case 'k':
+                $value *= 1024;
+        }
+
+        return $value;
+    };
+
+    $memoryLimit = trim(ini_get('memory_limit'));
+    if ($memoryLimit != -1 && $memoryInBytes($memoryLimit) < 1024 * 1024 * 1536) {
+        @ini_set('memory_limit', '1536M');
+    }
+    unset($memoryInBytes, $memoryLimit);
+}
+
+$version = ($version === '@'.'git_version'.'@')
+    ? Builder::getVersion()
+    : $version;
+
+$application = new Application('Cecil', $version);
+
+$exit = $application->run();
+exit($exit);
