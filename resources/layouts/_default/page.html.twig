@@ -4,140 +4,342 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Portfolio Alpha - Tech City</title>
-    <meta name="description" content="Portfolio personnel de Alpha Kitara, étudiant en L3 IAGE.">
+    <title>Portfolio Alpha | Tech City</title>
+    <meta name="description" content="Portfolio professionnel de Alpha Kitara, étudiant en L3 IAGE.">
 
-    <!-- CSS : chemin compatible avec GitHub Pages -->
-    <link rel="stylesheet" href="{{ url('css/style.css', {canonical: true}) }}">
+    <!-- Chargement du CSS sur GitHub Pages -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-<!-- HEADER -->
+<!-- NAVIGATION -->
 <header class="header">
-    <a href="#accueil" class="logo">ALPHA<span>.</span></a>
+    <div class="container nav-container">
+        <a href="#accueil" class="logo">ALPHA<span>.</span></a>
 
-    <nav class="navigation">
-        <a href="#accueil">Accueil</a>
-        <a href="#apropos">À propos</a>
-        <a href="#competences">Compétences</a>
-        <a href="#projets">Projets</a>
-        <a href="#contact">Contact</a>
-    </nav>
+        <nav class="navigation">
+            <a href="#accueil">Accueil</a>
+            <a href="#apropos">À propos</a>
+            <a href="#competences">Compétences</a>
+            <a href="#projets">Projets</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <a href="#contact" class="nav-button">Me contacter</a>
+    </div>
 </header>
 
-<!-- ACCUEIL -->
-<section class="hero" id="accueil">
-    <div class="hero-content">
-        <p class="eyebrow">BIENVENUE SUR MON PORTFOLIO</p>
+<main>
 
-        <h1>ALPHA <span>KITARA</span></h1>
+    <!-- ACCUEIL -->
+    <section class="hero" id="accueil">
+        <div class="container hero-grid">
 
-        <h2>Étudiant en L3 IAGE</h2>
+            <div class="hero-content">
+                <p class="eyebrow">
+                    <span class="status-dot"></span>
+                    BIENVENUE SUR MON PORTFOLIO
+                </p>
 
-        <p>
-            Informatique Appliquée à la Gestion d'Entreprise.
-            Passionné par le développement web, les technologies
-            numériques et l'innovation.
-        </p>
+                <h1>
+                    Bonjour, je suis<br>
+                    <span>Alpha Kitara.</span>
+                </h1>
 
-        <div class="hero-buttons">
-            <a href="#projets" class="btn btn-primary">Voir mes projets</a>
-            <a href="#contact" class="btn btn-outline">Me contacter</a>
+                <h2>Étudiant en <strong>L3 IAGE</strong></h2>
+
+                <p class="hero-description">
+                    Passionné par le développement web, les technologies
+                    numériques et les systèmes informatiques. Je construis
+                    mes compétences pour créer des solutions utiles et innovantes.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#projets" class="btn btn-primary">
+                        Découvrir mes projets <span>→</span>
+                    </a>
+
+                    <a href="#contact" class="btn btn-secondary">
+                        Me contacter
+                    </a>
+                </div>
+
+                <div class="hero-social">
+                    <span>MON UNIVERS :</span>
+                    <span>Technologie</span>
+                    <span>•</span>
+                    <span>Innovation</span>
+                    <span>•</span>
+                    <span>Créativité</span>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="visual-glow"></div>
+
+                <div class="profile-card">
+                    <div class="card-top">
+                        <span class="card-label">PORTFOLIO PERSONNEL</span>
+                        <span class="card-indicator">● EN LIGNE</span>
+                    </div>
+
+                    <div class="avatar">
+                        AK
+                    </div>
+
+                    <h3>Alpha Kitara</h3>
+                    <p class="profile-role">Étudiant en L3 IAGE</p>
+
+                    <div class="profile-line"></div>
+
+                    <div class="profile-info">
+                        <div>
+                            <span>01</span>
+                            <p>Développement web</p>
+                        </div>
+                        <div>
+                            <span>02</span>
+                            <p>Innovation numérique</p>
+                        </div>
+                        <div>
+                            <span>03</span>
+                            <p>Gestion informatique</p>
+                        </div>
+                    </div>
+
+                    <div class="card-footer">
+                        <span>ALPHA.DEV</span>
+                        <span>2026</span>
+                    </div>
+                </div>
+
+                <div class="floating-tag tag-one">HTML & CSS</div>
+                <div class="floating-tag tag-two">IAGE</div>
+            </div>
+
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- À PROPOS -->
-<section class="section" id="apropos">
-    <p class="section-label">DÉCOUVREZ MON PARCOURS</p>
-    <h2>À propos de <span>moi</span></h2>
+    <!-- À PROPOS -->
+    <section class="section" id="apropos">
+        <div class="container">
 
-    <p>
-        Je suis Alpha Kitara, étudiant en troisième année de Licence
-        en Informatique Appliquée à la Gestion d'Entreprise.
-        Je m'intéresse aux solutions informatiques, à la programmation
-        et à la transformation numérique des entreprises.
-    </p>
-</section>
+            <div class="section-heading">
+                <span class="section-number">01 / À PROPOS</span>
+                <h2>Qui suis-je <span>?</span></h2>
+                <div class="heading-line"></div>
+            </div>
 
-<!-- COMPÉTENCES -->
-<section class="section" id="competences">
-    <p class="section-label">MON SAVOIR-FAIRE</p>
-    <h2>Mes <span>compétences</span></h2>
+            <div class="about-grid">
+                <div class="about-intro">
+                    <h3>Apprendre aujourd'hui,<br>
+                        <span>innover demain.</span>
+                    </h3>
+                </div>
 
-    <div class="cards">
-        <article class="card">
-            <h3>Développement web</h3>
-            <p>HTML, CSS et bases de la programmation web.</p>
-        </article>
+                <div class="about-text">
+                    <p>
+                        Je suis Alpha Kitara, étudiant en troisième année
+                        de Licence en Informatique Appliquée à la Gestion
+                        d'Entreprise (IAGE).
+                    </p>
 
-        <article class="card">
-            <h3>Gestion de données</h3>
-            <p>Initiation aux bases de données et au langage SQL.</p>
-        </article>
+                    <p>
+                        Je m'intéresse au développement web, aux réseaux
+                        informatiques, aux bases de données et aux systèmes
+                        d'information.
+                    </p>
 
-        <article class="card">
-            <h3>Réseaux informatiques</h3>
-            <p>Notions de réseaux, architecture et administration.</p>
-        </article>
+                    <p>
+                        Mon objectif est de développer mes compétences,
+                        acquérir de l'expérience et concevoir des solutions
+                        informatiques capables de répondre aux besoins
+                        des entreprises et des utilisateurs.
+                    </p>
+                </div>
+            </div>
 
-        <article class="card">
-            <h3>Outils numériques</h3>
-            <p>Git, GitHub et outils de travail informatique.</p>
-        </article>
-    </div>
-</section>
+        </div>
+    </section>
 
-<!-- PROJETS -->
-<section class="section" id="projets">
-    <p class="section-label">MES RÉALISATIONS</p>
-    <h2>Mes <span>projets</span></h2>
+    <!-- COMPÉTENCES -->
+    <section class="section section-alt" id="competences">
+        <div class="container">
 
-    <div class="cards">
-        <article class="card">
-            <h3>Portfolio personnel</h3>
+            <div class="section-heading">
+                <span class="section-number">02 / MON SAVOIR-FAIRE</span>
+                <h2>Mes <span>compétences</span></h2>
+                <div class="heading-line"></div>
+            </div>
+
+            <div class="cards-grid">
+
+                <article class="skill-card">
+                    <div class="card-icon">&lt;/&gt;</div>
+                    <span class="card-index">01</span>
+                    <h3>Développement web</h3>
+                    <p>
+                        Création de pages web et apprentissage des technologies
+                        du développement front-end.
+                    </p>
+                    <div class="skill-tags">
+                        <span>HTML</span><span>CSS</span>
+                    </div>
+                </article>
+
+                <article class="skill-card">
+                    <div class="card-icon">▦</div>
+                    <span class="card-index">02</span>
+                    <h3>Bases de données</h3>
+                    <p>
+                        Organisation, conception et manipulation
+                        des données informatiques.
+                    </p>
+                    <div class="skill-tags">
+                        <span>SQL</span><span>MERISE</span>
+                    </div>
+                </article>
+
+                <article class="skill-card">
+                    <div class="card-icon">⌘</div>
+                    <span class="card-index">03</span>
+                    <h3>Réseaux informatiques</h3>
+                    <p>
+                        Compréhension des réseaux, de leur architecture
+                        et de leur fonctionnement.
+                    </p>
+                    <div class="skill-tags">
+                        <span>LAN</span><span>WAN</span>
+                    </div>
+                </article>
+
+                <article class="skill-card">
+                    <div class="card-icon">✧</div>
+                    <span class="card-index">04</span>
+                    <h3>Outils numériques</h3>
+                    <p>
+                        Utilisation des outils numériques pour apprendre,
+                        collaborer et réaliser des projets.
+                    </p>
+                    <div class="skill-tags">
+                        <span>Git</span><span>GitHub</span>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJETS -->
+    <section class="section" id="projets">
+        <div class="container">
+
+            <div class="section-heading">
+                <span class="section-number">03 / MES RÉALISATIONS</span>
+                <h2>Projets <span>académiques</span></h2>
+                <div class="heading-line"></div>
+            </div>
+
+            <div class="projects-grid">
+
+                <article class="project-card">
+                    <div class="project-top">
+                        <span>PROJET 01</span>
+                        <span class="project-symbol">↗</span>
+                    </div>
+                    <div class="project-visual visual-blue">
+                        <span>&lt; HTML / CSS &gt;</span>
+                    </div>
+                    <div class="project-content">
+                        <h3>Portfolio personnel</h3>
+                        <p>
+                            Conception et publication d'un site personnel
+                            avec Cecil et GitHub Pages.
+                        </p>
+                        <div class="skill-tags">
+                            <span>HTML</span><span>CSS</span><span>GitHub</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-top">
+                        <span>PROJET 02</span>
+                        <span class="project-symbol">↗</span>
+                    </div>
+                    <div class="project-visual visual-orange">
+                        <span>DATABASE / SQL</span>
+                    </div>
+                    <div class="project-content">
+                        <h3>Gestion commerciale</h3>
+                        <p>
+                            Étude et réalisation d'un projet académique
+                            autour de la gestion commerciale.
+                        </p>
+                        <div class="skill-tags">
+                            <span>SQL</span><span>Gestion</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-top">
+                        <span>PROJET 03</span>
+                        <span class="project-symbol">↗</span>
+                    </div>
+                    <div class="project-visual visual-cyan">
+                        <span>NETWORK SYSTEM</span>
+                    </div>
+                    <div class="project-content">
+                        <h3>Réseaux informatiques</h3>
+                        <p>
+                            Travaux pratiques sur les architectures
+                            et les communications réseau.
+                        </p>
+                        <div class="skill-tags">
+                            <span>LAN</span><span>WAN</span>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact-section" id="contact">
+        <div class="container contact-box">
+
+            <span class="section-number">04 / CONTACT</span>
+
+            <h2>Construisons quelque chose<br>
+                <span>d'intéressant.</span>
+            </h2>
+
             <p>
-                Création de mon site personnel avec HTML, CSS,
-                Cecil et GitHub Pages.
+                Une idée, un projet ou une opportunité de collaboration ?
+                Je serais heureux d'échanger avec vous.
             </p>
-        </article>
 
-        <article class="card">
-            <h3>Gestion commerciale</h3>
-            <p>
-                Projet académique autour de la gestion
-                des opérations commerciales.
-            </p>
-        </article>
+            <a href="mailto:" class="btn btn-primary">
+                Envoyer un message <span>→</span>
+            </a>
 
-        <article class="card">
-            <h3>Base de données</h3>
-            <p>
-                Travaux pratiques sur la conception
-                et la gestion des données.
-            </p>
-        </article>
-    </div>
-</section>
+        </div>
+    </section>
 
-<!-- CONTACT -->
-<section class="section contact" id="contact">
-    <p class="section-label">RESTONS EN CONTACT</p>
-    <h2>Travaillons <span>ensemble</span></h2>
+</main>
 
-    <p>
-        Vous avez une idée, un projet ou une opportunité ?
-        N'hésitez pas à me contacter.
-    </p>
-
-    <a href="mailto:" class="btn btn-primary">Me contacter par email</a>
-</section>
-
-<!-- FOOTER -->
+<!-- PIED DE PAGE -->
 <footer class="footer">
-    <p>© 2026 Alpha Kitara — Portfolio personnel.</p>
-    <p>Conçu avec passion et créativité.</p>
+    <div class="container footer-content">
+        <a href="#accueil" class="logo">ALPHA<span>.</span></a>
+
+        <p>© 2026 Alpha Kitara. Tous droits réservés.</p>
+
+        <a href="#accueil" class="back-top">Retour en haut ↑</a>
+    </div>
 </footer>
 
 </body>
