@@ -5,87 +5,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>
-        {% if page.title %}
-            {{ page.title }} |
-        {% endif %}
-        ALPHA - TECH CITY
-    </title>
+    <title>{% if page.title %}{{ page.title }} | {% endif %}ALPHA - TECH CITY</title>
 
     <meta name="description" content="Portfolio personnel de Alpha Kitara, étudiant en L3 IAGE.">
-
     <meta name="author" content="Alpha Kitara">
 
-    <!-- CSS PRINCIPAL -->
-    <link rel="stylesheet" href="css/style.css">
+    <!-- FEUILLE DE STYLE -->
+    <link rel="stylesheet" href="{{ site.baseurl }}/css/style.css">
 
     <!-- ICONES -->
-    <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
 
-    <!-- NAVIGATION -->
     <header class="header">
-
-        <a href="./" class="logo">
-            ALPHA<span>.</span>
-        </a>
+        <a href="{{ site.baseurl }}/" class="logo">ALPHA<span>.</span></a>
 
         <nav class="navbar">
-            <a href="./">Accueil</a>
-            <a href="#about">À propos</a>
-            <a href="#skills">Compétences</a>
-            <a href="#projects">Projets</a>
-            <a href="#contact">Contact</a>
+            <a href="{{ site.baseurl }}/">Accueil</a>
+            <a href="{{ site.baseurl }}/#about">À propos</a>
+            <a href="{{ site.baseurl }}/#skills">Compétences</a>
+            <a href="{{ site.baseurl }}/#projects">Projets</a>
+            <a href="{{ site.baseurl }}/#contact">Contact</a>
         </nav>
-
     </header>
 
-    <!-- CONTENU PRINCIPAL -->
     <main>
 
         <section class="hero" id="home">
-
             <div class="hero-content">
+                <p class="welcome">BIENVENUE SUR MON PORTFOLIO</p>
 
-                <p class="welcome">
-                    BIENVENUE SUR MON PORTFOLIO
-                </p>
+                <h1>Bonjour, je suis <span>ALPHA KITARA</span></h1>
 
-                <h1>
-                    Bonjour, je suis
-                    <span>ALPHA KITARA</span>
-                </h1>
-
-                <h2>
-                    Étudiant en L3 IAGE
-                </h2>
+                <h2>Étudiant en L3 IAGE</h2>
 
                 <p class="hero-description">
                     Passionné par l'informatique, le développement web,
-                    les technologies numériques et les systèmes
-                    d'information.
+                    les technologies numériques et les systèmes d'information.
                 </p>
 
                 <div class="hero-buttons">
-
-                    <a href="#projects" class="btn">
-                        Découvrir mes projets
-                    </a>
-
-                    <a href="#contact" class="btn btn-outline">
-                        Me contacter
-                    </a>
-
+                    <a href="#projects" class="btn">Découvrir mes projets</a>
+                    <a href="#contact" class="btn btn-outline">Me contacter</a>
                 </div>
-
             </div>
 
             <div class="hero-image">
-
                 <div class="image-circle">
                     <i class="fas fa-laptop-code"></i>
                 </div>
@@ -94,49 +61,37 @@
                     <i class="fas fa-code"></i>
                     <span>Web Developer</span>
                 </div>
-
             </div>
-
         </section>
 
-        <!-- A PROPOS -->
         <section class="about section" id="about">
-
             <div class="section-title">
                 <p>QUI SUIS-JE ?</p>
                 <h2>À propos de <span>moi</span></h2>
             </div>
 
             <div class="about-content">
-
                 <div class="about-text">
-
                     <h3>Alpha Kitara</h3>
 
                     <p>
                         Je suis étudiant en troisième année de Licence
-                        en Informatique Appliquée à la Gestion
-                        d'Entreprise (IAGE).
+                        en Informatique Appliquée à la Gestion d'Entreprise.
                     </p>
 
                     <p>
-                        Je m'intéresse particulièrement au développement
-                        web, à la programmation, aux bases de données,
-                        aux réseaux informatiques et aux nouvelles
-                        technologies.
+                        Je m'intéresse au développement web, à la programmation,
+                        aux bases de données, aux réseaux informatiques et aux
+                        nouvelles technologies.
                     </p>
 
                     <p>
-                        Mon ambition est de développer mes compétences
-                        numériques et de concevoir des solutions
-                        informatiques innovantes répondant aux besoins
-                        des entreprises.
+                        Mon ambition est de développer mes compétences numériques
+                        et de concevoir des solutions informatiques innovantes.
                     </p>
-
                 </div>
 
                 <div class="about-info">
-
                     <div class="info-card">
                         <i class="fas fa-user-graduate"></i>
                         <h4>Formation</h4>
@@ -154,23 +109,17 @@
                         <h4>Objectif</h4>
                         <p>Innovation numérique</p>
                     </div>
-
                 </div>
-
             </div>
-
         </section>
 
-        <!-- COMPETENCES -->
         <section class="skills section" id="skills">
-
             <div class="section-title">
                 <p>MON SAVOIR-FAIRE</p>
                 <h2>Mes <span>compétences</span></h2>
             </div>
 
             <div class="skills-container">
-
                 <div class="skill-card">
                     <i class="fab fa-html5"></i>
                     <h3>HTML</h3>
@@ -204,32 +153,24 @@
                 <div class="skill-card">
                     <i class="fas fa-terminal"></i>
                     <h3>Linux</h3>
-                    <p>Administration et commandes système.</p>
+                    <p>Administration système.</p>
                 </div>
-
             </div>
-
         </section>
 
-        <!-- PROJETS -->
         <section class="projects section" id="projects">
-
             <div class="section-title">
                 <p>MES RÉALISATIONS</p>
                 <h2>Mes <span>projets</span></h2>
             </div>
 
             <div class="projects-container">
-
                 <div class="project-card">
                     <div class="project-icon">
                         <i class="fas fa-globe"></i>
                     </div>
                     <h3>Portfolio personnel</h3>
-                    <p>
-                        Création de mon site personnel avec HTML,
-                        CSS et Cecil.
-                    </p>
+                    <p>Création de mon site personnel avec HTML, CSS et Cecil.</p>
                     <span>Développement Web</span>
                 </div>
 
@@ -238,10 +179,7 @@
                         <i class="fas fa-database"></i>
                     </div>
                     <h3>Gestion commerciale</h3>
-                    <p>
-                        Projet académique autour de la gestion
-                        des informations commerciales.
-                    </p>
+                    <p>Projet académique autour de la gestion commerciale.</p>
                     <span>Base de données</span>
                 </div>
 
@@ -250,56 +188,41 @@
                         <i class="fas fa-network-wired"></i>
                     </div>
                     <h3>Réseaux informatiques</h3>
-                    <p>
-                        Travaux pratiques sur les réseaux et
-                        les systèmes informatiques.
-                    </p>
+                    <p>Travaux pratiques sur les réseaux et systèmes informatiques.</p>
                     <span>Réseaux</span>
                 </div>
-
             </div>
-
         </section>
 
-        <!-- CONTACT -->
         <section class="contact section" id="contact">
-
             <div class="section-title">
                 <p>RESTONS EN CONTACT</p>
                 <h2>Me <span>contacter</span></h2>
             </div>
 
             <div class="contact-content">
-
                 <p>
-                    Vous souhaitez échanger avec moi autour
-                    de l'informatique et des projets numériques ?
+                    Vous souhaitez échanger avec moi autour de l'informatique
+                    et des projets numériques ?
                 </p>
 
                 <a href="mailto:contact@example.com" class="btn">
                     <i class="fas fa-envelope"></i>
                     Envoyer un email
                 </a>
-
             </div>
-
         </section>
 
     </main>
 
-    <!-- FOOTER -->
     <footer class="footer">
-
         <h3>ALPHA<span>.</span></h3>
 
-        <p>
-            Étudiant en L3 IAGE | Passionné de technologie
-        </p>
+        <p>Étudiant en L3 IAGE | Passionné de technologie</p>
 
         <p class="copyright">
             © 2026 ALPHA KITARA - Tous droits réservés.
         </p>
-
     </footer>
 
 </body>
