@@ -1,0 +1,43 @@
+{
+  "alias": "cecil.phar",
+  "compactors": [
+    "KevinGH\\Box\\Compactor\\Json",
+    "KevinGH\\Box\\Compactor\\Php"
+  ],
+  "directories": [
+    "config",
+    "src",
+    "resources"
+  ],
+  "finder": [
+    {
+      "name": [
+        "*.php",
+        "*.twig",
+        "*.yaml",
+        "*.yml",
+        "*.json",
+        "*.txt",
+        "*.xml",
+        "*.xsd",
+        "LICENSE*",
+        "License*",
+        "VERSION"
+      ],
+      "notName": [
+        "composer.json",
+        "box.json"
+      ],
+      "exclude": [
+        "phpunit",
+        "Tests",
+        "tests"
+      ],
+      "in": [
+        "."
+      ]
+    }
+  ],
+  "git-version": "git_version",
+  "output": "dist/cecil.phar"
+}
