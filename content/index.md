@@ -1,4 +1,3 @@
-
 ---
 title: "Accueil"
 ---
@@ -9,19 +8,29 @@ title: "Accueil"
 
 **Informatique Appliquée à la Gestion d'Entreprise**
 
-Bienvenue sur mon portfolio personnel.
+Bienvenue dans mon univers numérique.
 
-Je suis étudiant en troisième année de Licence en Informatique Appliquée à la Gestion d'Entreprise. Je m'intéresse au développement web, aux technologies numériques et aux systèmes informatiques.
+Je suis étudiant en troisième année de Licence en Informatique Appliquée à la Gestion d'Entreprise à l'Université de l'Assomption au Congo.
 
-Mon objectif est de développer mes compétences et de concevoir des solutions informatiques capables de répondre aux besoins des entreprises.
+Passionné par les technologies numériques, le développement web et les systèmes informatiques, je cherche constamment à apprendre, créer et innover.
+
+[Découvrir mes compétences](#mes-competences) | [Me contacter](#contact)
 
 ---
 
 ## À propos de moi
 
-Je suis un étudiant passionné par l'informatique, la gestion et les nouvelles technologies.
+Je suis un étudiant motivé, créatif et passionné par l'informatique et la gestion.
 
-À travers ma formation, je développe progressivement mes connaissances dans la programmation, les bases de données, les réseaux informatiques et la gestion des systèmes d'information.
+Ma formation me permet de développer des compétences dans plusieurs domaines :
+
+- Développement web
+- Programmation informatique
+- Gestion des bases de données
+- Réseaux informatiques
+- Administration des systèmes d'information
+
+Mon ambition est de devenir un professionnel capable de concevoir des solutions numériques innovantes pour les entreprises.
 
 ---
 
@@ -38,13 +47,16 @@ Je suis un étudiant passionné par l'informatique, la gestion et les nouvelles 
 
 ## Mes projets
 
-### Portfolio personnel
-Création et personnalisation d'un site web personnel avec HTML, CSS et Cecil.
+### 01. Portfolio personnel
 
-### Gestion commerciale
+Création et personnalisation d'un site web personnel avec Cecil, HTML et CSS.
+
+### 02. Gestion commerciale
+
 Étude et conception d'une application de gestion commerciale utilisant une base de données.
 
-### Projet de gestion informatique
+### 03. Projet de gestion informatique
+
 Travaux pratiques portant sur les systèmes d'information et les technologies numériques.
 
 ---
@@ -55,6 +67,7 @@ Travaux pratiques portant sur les systèmes d'information et les technologies nu
 - Améliorer mes compétences en programmation.
 - Maîtriser les systèmes et réseaux informatiques.
 - Concevoir des solutions numériques utiles aux entreprises.
+- Construire une carrière dans le domaine informatique.
 
 ---
 
@@ -65,3 +78,9 @@ Travaux pratiques portant sur les systèmes d'information et les technologies nu
 **Formation :** L3 IAGE
 
 **Université :** Université de l'Assomption au Congo (UAC)
+
+**GitHub :** [AlphaMK123](https://github.com/AlphaMK123)
+
+---
+
+*ALPHA — Learning, Creating and Innovating.*
