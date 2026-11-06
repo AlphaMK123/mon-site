@@ -1,0 +1,233 @@
+/* =================================
+   PORTFOLIO ALPHA - TECH CITY
+   ================================= */
+
+:root {
+    --background: #050b16;
+    --surface: #101f34;
+    --cyan: #00c8ff;
+    --white: #ffffff;
+    --text: #cbd5e1;
+}
+
+/* STYLE GENERAL */
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background:
+        radial-gradient(circle at 80% 20%, #102c50 0%, transparent 35%),
+        #050b16;
+    color: var(--text);
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.7;
+}
+
+/* EN-TETE */
+
+header {
+    background: rgba(8, 18, 35, 0.96);
+    padding: 22px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 200, 255, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(12px);
+}
+
+header .logo,
+header h1 {
+    font-size: 1.6rem;
+    font-weight: 900;
+    color: #ffffff;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+header .logo span {
+    color: var(--cyan);
+}
+
+/* MENU */
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+nav a {
+    color: #cbd5e1;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 600;
+    transition: 0.3s;
+    margin: 0;
+}
+
+nav a:hover,
+nav a.active {
+    color: var(--cyan);
+}
+
+/* CONTENU PRINCIPAL */
+
+main,
+.container {
+    max-width: 1100px;
+    margin: 55px auto;
+    padding: 45px;
+    background: rgba(16, 31, 52, 0.85);
+    border: 1px solid rgba(0, 200, 255, 0.15);
+    border-radius: 18px;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.4);
+}
+
+/* TITRES */
+
+h1, h2, h3 {
+    color: #ffffff;
+    margin-top: 0;
+}
+
+h1 {
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 2rem;
+    border-left: 4px solid var(--cyan);
+    padding-left: 15px;
+    margin-bottom: 25px;
+}
+
+h2 span,
+h1 span {
+    color: var(--cyan);
+}
+
+/* PARAGRAPHES */
+
+p {
+    color: var(--text);
+    font-size: 1.02rem;
+    margin-bottom: 20px;
+}
+
+/* BOUTONS ET LIENS */
+
+a {
+    color: var(--cyan);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #ffffff;
+}
+
+/* BOUTONS */
+
+button,
+.btn {
+    display: inline-block;
+    background: var(--cyan);
+    color: #04111f;
+    padding: 12px 24px;
+    border-radius: 30px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover,
+.btn:hover {
+    background: #ffffff;
+    color: #04111f;
+    transform: translateY(-3px);
+}
+
+/* CARTES */
+
+article,
+.card {
+    background: #142640;
+    padding: 25px;
+    border-radius: 14px;
+    border: 1px solid rgba(0, 200, 255, 0.18);
+    transition: 0.3s;
+}
+
+article:hover,
+.card:hover {
+    border-color: var(--cyan);
+    transform: translateY(-5px);
+}
+
+/* IMAGES */
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 14px;
+}
+
+/* PIED DE PAGE */
+
+footer {
+    text-align: center;
+    padding: 30px;
+    color: #94a3b8;
+    font-size: 0.9rem;
+    border-top: 1px solid rgba(0, 200, 255, 0.2);
+    margin-top: 50px;
+    background: #081323;
+}
+
+/* ADAPTATION TELEPHONE */
+
+@media (max-width: 700px) {
+
+    header {
+        flex-direction: column;
+        gap: 18px;
+        padding: 20px;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    nav a {
+        font-size: 0.85rem;
+    }
+
+    main,
+    .container {
+        margin: 25px 12px;
+        padding: 22px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    footer {
+        padding: 20px;
+    }
+}

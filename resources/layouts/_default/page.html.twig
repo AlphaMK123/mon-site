@@ -6,33 +6,152 @@
 
     <title>{{ site.title }}</title>
 
-    <link rel="stylesheet" href="{{ url('css/style.css') }}">
+    <meta name="description" content="Portfolio personnel de Alpha Kitara, étudiant en L3 IAGE.">
+
+    <!-- CSS : chemin adapté à GitHub Pages -->
+    <link rel="stylesheet" href="{{ url('css/style.css', {canonical: true}) }}">
 </head>
 
 <body>
 
+    <!-- HEADER -->
     <header class="header">
-        <div class="logo">ALPHA<span>.</span></div>
+        <a href="#accueil" class="logo">ALPHA<span>.</span></a>
 
-        <nav>
-            <a href="#home">Accueil</a>
-            <a href="#about">À propos</a>
-            <a href="#skills">Compétences</a>
-            <a href="#projects">Projets</a>
+        <nav class="navigation">
+            <a href="#accueil">Accueil</a>
+            <a href="#apropos">À propos</a>
+            <a href="#competences">Compétences</a>
+            <a href="#projets">Projets</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
 
     <main>
 
-        <section class="hero" id="home">
-            {{ page.content }}
+        <!-- ACCUEIL -->
+        <section class="hero" id="accueil">
+            <div class="hero-content">
+                <p class="eyebrow">BIENVENUE SUR MON PORTFOLIO</p>
+
+                <h1>ALPHA <span>KITARA</span></h1>
+
+                <h2>Étudiant en L3 IAGE</h2>
+
+                <p class="description">
+                    Informatique Appliquée à la Gestion d'Entreprise.
+                    Passionné par le développement web, les technologies
+                    numériques et les systèmes informatiques.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#apropos" class="btn primary">Découvrir</a>
+                    <a href="#contact" class="btn secondary">Me contacter</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- À PROPOS -->
+        <section class="about-section" id="apropos">
+            <h2>À propos de <span>moi</span></h2>
+
+            <p>
+                Je suis Alpha Kitara, étudiant en troisième année de Licence
+                en Informatique Appliquée à la Gestion d'Entreprise.
+                Je m'intéresse au développement web, aux réseaux
+                informatiques et aux technologies numériques.
+            </p>
+        </section>
+
+        <!-- COMPÉTENCES -->
+        <section class="skills-section" id="competences">
+            <h2>Mes <span>compétences</span></h2>
+
+            <div class="cards-container">
+                <div class="card">
+                    <h3>HTML & CSS</h3>
+                    <p>Création de pages web et interfaces modernes.</p>
+                </div>
+
+                <div class="card">
+                    <h3>PHP</h3>
+                    <p>Programmation web dynamique.</p>
+                </div>
+
+                <div class="card">
+                    <h3>SQL</h3>
+                    <p>Gestion et manipulation des bases de données.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Git & GitHub</h3>
+                    <p>Gestion de versions et hébergement de projets.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Réseaux informatiques</h3>
+                    <p>Notions de réseaux et systèmes informatiques.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Administration système</h3>
+                    <p>Découverte des environnements informatiques.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJETS -->
+        <section class="projects-section" id="projets">
+            <h2>Mes <span>projets</span></h2>
+
+            <div class="cards-container">
+                <div class="card project">
+                    <div class="project-number">01</div>
+                    <h3>Portfolio personnel</h3>
+                    <p>
+                        Création de mon portfolio avec HTML, CSS,
+                        Cecil et GitHub Pages.
+                    </p>
+                </div>
+
+                <div class="card project">
+                    <div class="project-number">02</div>
+                    <h3>Gestion commerciale</h3>
+                    <p>
+                        Conception d'une application de gestion
+                        commerciale et de ses données.
+                    </p>
+                </div>
+
+                <div class="card project">
+                    <div class="project-number">03</div>
+                    <h3>Réseaux informatiques</h3>
+                    <p>
+                        Travaux pratiques sur les réseaux
+                        et les systèmes informatiques.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section class="contact-section" id="contact">
+            <h2>Travaillons <span>ensemble</span></h2>
+
+            <p>
+                Merci de visiter mon portfolio personnel.
+                N'hésitez pas à me contacter pour échanger.
+            </p>
+
+            <a href="mailto:" class="btn primary">Me contacter</a>
         </section>
 
     </main>
 
+    <!-- FOOTER -->
     <footer>
-        <p>© {{ "now"|date("Y") }} Alpha Kitara — Portfolio personnel</p>
+        <p>&copy; 2026 Alpha Kitara - Portfolio personnel</p>
+        <p>Créé avec Cecil</p>
     </footer>
 
 </body>

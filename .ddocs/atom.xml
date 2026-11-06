@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+  <id>http://localhost:8000/</id>
+  <title>Portfolio Alpha</title>
+  <subtitle><![CDATA[Site description]]></subtitle>
+  <link href="http://localhost:8000/atom.xml" rel="self" type="application/atom+xml" />
+  <link href="http://localhost:8000/" rel="alternate" type="text/html" />
+  <updated>2026-11-04T23:04:50+01:00</updated>
+  <author>
+    <name>Portfolio Alpha</name>
+    <uri>http://localhost:8000</uri>
+  </author>
+  <entry xml:lang="en">
+    <id>http://localhost:8000/inde/</id>
+    <title>inde</title>
+    <content type="html">
+      <![CDATA[<p>---</p>
+<p>title: &quot;Portfolio Alpha&quot;</p>
+<p>Bienvenue sur mon portfolio !</p>
+<p>ALPHA KITARA</p>
+<p>Étudiant en L3 IAGE</p>
+<p>Informatique Appliquée à la Gestion d’Entreprise.</p>
+<p>À propos de moi</p>
+<p>Je suis étudiant à l'Université de l'Assomption au Congo (UAC). Je m'intéresse à l'informatique, à la gestion et aux nouvelles technologies.</p>
+<p>Mes compétences</p>
+<p>- HTML et CSS</p>
+<p>- Git et GitHub</p>
+<p>- Informatique de gestion</p>
+<p>- Administration système</p>
+<p>- Bases de données</p>
+<p>Mes objectifs</p>
+<p>Devenir un professionnel compétent dans le domaine de l'informatique et développer des solutions numériques innovantes.</p>
+<p>Contact</p>
+<p>Nom : Alpha Kitara</p>
+<p>Formation : L3 IAGE</p>
+<p>Université : UAC</p>
+<p>Merci de visiter mon portfolio !</p>]]>
+    </content>
+    <link href="http://localhost:8000/inde/" rel="alternate" type="text/html" />
+    <published>2026-11-04T23:04:50+01:00</published>
+    <updated>2026-11-04T23:04:50+01:00</updated>
+  </entry>
+</feed>
